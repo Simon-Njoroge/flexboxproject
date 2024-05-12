@@ -1,0 +1,189 @@
+body {
+    background-color: white;
+    margin: 20px; 
+}
+.list  {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.logo {
+    color: yellow;
+    order: -1;
+}
+.list ul{
+    display: flex;
+    list-style-type: none;
+    
+}
+.list ul li a:hover{
+    color: red;
+    
+}
+.list ul{
+    display: flex;
+    list-style-type: none;
+    
+}
+.list ul li {
+    padding: 20px;
+}
+.list ul li a{
+    text-decoration: none;  
+    color: black;
+    justify-content: flex-end;
+}
+img  {
+    width: 100px;
+}
+.submenu {
+    display: none;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;  
+    row-gap: 20px;
+    column-gap: 50px;
+}
+
+.bright {
+    border: 1px solid white;
+    width: 60%;
+    height: 20%;
+}
+.bright img {
+    width: 100%;
+}
+.read {
+    display: inline-flex;
+    background-color: red;
+    padding: 10px;
+}
+.read:hover {
+    color: white;
+    background-color: black;
+}
+.future {
+    display: flex;
+}
+.new {
+    width: 25%;
+    background-color: black;
+    height: 600px;
+}
+.new h3{
+ color: yellow;
+}
+.new h5{
+    color: white;
+   }
+.new h5:hover{
+    color: yellow;
+   }
+.new p{
+    color: gray;
+    border-bottom: 1px solid white;
+   } 
+.new p:nth-child(7){
+    
+    border: none;
+   } 
+.pc {
+    
+    display: flex;
+}
+.pc div{
+    width: 300px;
+}
+.pc h3{
+    color: gray;
+}
+.pc img {
+  height: 100%; 
+}
+.laptop{
+    display: flex;
+}
+.laptop div{
+    width: 250px;
+}
+.laptop h3{
+    color: grey;
+}
+.gaming{
+    display: flex;
+}
+.gaming div{
+    width: 300px;
+}
+
+.gaming h3{
+    color: grey;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .bright {
+        border: 1px solid white;
+        width: 100%;
+        height: 20%;
+        
+    }
+    .new {
+        width: 100%;
+        background-color: black;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: -240px;
+        top: 0;
+        height: 100%;
+        background-color: white;
+        transition: right .6s ease-in-out;
+    }
+
+    .menu ul {
+        list-style: none;
+        flex-direction: column;
+    }
+    
+.menu-show {
+        right: 0;
+        transition: right .6s ease-in-out;
+    }
+
+.submenu {
+    display: block;
+}
+.submenu img{
+    width: 40px;
+    cursor: pointer;
+    
+}
+.submenu:hover .menu{
+        display: block;
+        list-style-type: none;
+        
+    }
+    .pc {
+    
+        display: flex;
+    }
+    .laptop{
+        display: flex;
+        padding-bottom: 10px;
+    }
+    .gaming{
+        display: flex;
+    }
+    .pc img {
+        height: 100%; 
+      }
+}

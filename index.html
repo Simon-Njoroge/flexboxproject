@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="list">
+        <div class="logo">
+        <h1 class="logo">W.</h1>
+    </div>
+    <div class="menu">
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">New</a></li>
+        <li><a href="">Popular</a></li>
+        <li><a href="">Trending</a></li>
+        <li><a href="">Categories</a></li>
+    </ul>
+    </div>
+    <div class="submenu">
+        <img src="./menu-icon.png" alt="">
+    </div>
+</div>
+    <div class="container">
+        <div class="bright">
+            <img src="./images/image-web-3-desktop.jpg" alt="an image">
+            <div class="future">
+            <h2>The Bright Future of Web 3.0?</h2>
+            <div>
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise? </p>
+            <p class="read">READMORE</p>
+            </div>
+           </div>
+        </div>
+        <div class="new">
+            <h3>New</h3>
+            <h5>hydrogen vs Electric Cars</h5>
+            <p>will hydrogen-fueled cars evr catch up to EVs?</p>
+            <h5>The Downsides of AI Artistry</h5>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            <h5>Is VC Funding Drying Up?</h5>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+        <div class="pc">
+            <img src="./images/image-retro-pcs.jpg" alt="pc">
+            <div>
+            <h3>01</h3>
+            <h6>Reviving Retro PCs</h6>
+            <p>what happens when old PCs are given modern upgrades?</p>
+            </div>
+        </div>
+        <div class="laptop">
+            <img src="./images/image-top-laptops.jpg" alt="keyboard">
+            <div>
+            <h3>02</h3>
+            <h6>Top 10 Laptops of 2022</h6>
+            <p>Our best picks for various needs and budgets</p>
+         </div>
+        </div>
+        <div class="gaming">
+            <img src="./images/image-gaming-growth.jpg" alt="gamepad">
+            <div>
+            <h3>03</h3>
+            <h6>The growth of Gaming</h6>
+            <p>How the pandemic has sparked fresh opporunities.</p>
+            </div>
+        
+    </div>
+    </div>
+    <script>
+        const menu = document.querySelector('.submenu img');
+        const nav = document.querySelector('.menu');
+        const close = document.querySelector('.submenu img');
+
+        menu.addEventListener('click',() =>{
+            nav.classList.toggle('menu-show')
+        })
+    </script>
+</body>
+</html>
